@@ -1,0 +1,4 @@
+name: ODMR
+version: 1.0
+main: tk.omgpi.dogatron03.ODMR
+depend: [OMGPI]
