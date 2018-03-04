@@ -103,7 +103,7 @@ public class ODMR extends Game {
     }
 
 
-    public void game_game_checkForEnd() {
+    public void game_checkForEnd() {
         if (state == GameState.INGAME) {
             ObjectiveBuffer buf = new ObjectiveBuffer();
             OMGTeam.getFiltered(x -> x != spectatorTeam && x != defaultTeam).forEach(x -> {
@@ -174,7 +174,7 @@ public class ODMR extends Game {
             e.setCancelled(true);
             e.getBlock().setType(Material.AIR);
         })));
-        game_game_checkForEnd();
+        game_checkForEnd();
     }
 
     @EventHandler

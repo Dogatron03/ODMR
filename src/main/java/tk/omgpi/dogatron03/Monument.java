@@ -41,7 +41,7 @@ public class Monument {
                     for (int z = (int) asarea[2]; z <= asarea[5]; z++) cts.add(new double[]{x, y, z});
             return new Monument(OMGTeam.getTeamByID(data[0]), ChatColor.translateAlternateColorCodes('&', data[1]), cts);
         } else
-            return new Monument(OMGTeam.getTeamByID(data[0]), ChatColor.translateAlternateColorCodes('&',data[1]), new ArrayList<double[]>() {{
+            return new Monument(OMGTeam.getTeamByID(data[0]), ChatColor.translateAlternateColorCodes('&', data[1]), new ArrayList<double[]>() {{
                 add(Coordinates.parse(data[2], Coordinates.CoordinateType.POINT));
             }});
     }

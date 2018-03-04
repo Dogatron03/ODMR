@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ODMR">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="ODMR.jar">
+      <element id="module-output" name="ODMR" />
+    </root>
+  </artifact>
+</component>
